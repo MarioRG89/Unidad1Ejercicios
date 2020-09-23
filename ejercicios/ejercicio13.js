@@ -22,9 +22,15 @@ function solicitudNumLet(){
    var filas=parseInt(prompt("Introduce un numero"));
    var columnas=parseInt(prompt("Introduce otro numero"));
    var caracter=prompt("introduce una letra");
-    var arrayBidimensional= new Array(filas);
-    for (var i = 0; i < filas; i++) {
-    arrayBidimensional[filas] = new Array(columnas);
+    var resultado = "";
+    while(filas > 0 ) {
+        let numeroColumnas = columnas;
+        while (numeroColumnas > 0) {
+            resultado = resultado + caracter;
+            numeroColumnas--;
+        }
+        resultado = resultado + "\n";
+        filas--;
     }
-    
+    alert(resultado);
 }
