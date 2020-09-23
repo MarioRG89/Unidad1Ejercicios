@@ -1,5 +1,8 @@
 function pedirFecha(){
-    var fecha= prompt("Introduzca la fecha de la siguiente manera: Hoy es seguido del día, el mes y el año de la siguiente forma")
+    var dia= prompt("Introduzca el día");
+    var mes=prompt("Que mes es: ");
+    var anno=prompt("Que año es")
+    alert("Hoy es " + dia + " de " + mes + " de " + anno);
  }
  function combinacionNumeros(){
    var1= parseInt(prompt("introduzca un numero"));
@@ -11,6 +14,6 @@ function pedirFecha(){
    if(var1>0){
        alert(var1);
    }else if(var2>0){
-       alert(var2);s
+       alert(var2);
    }
  }
